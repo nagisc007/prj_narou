@@ -2,8 +2,9 @@
 """Test suite for all tests.
 """
 import unittest
-
 import test_shirobara
+import test_anotherend
+
 
 def suite():
     '''Packing all tests.
@@ -14,7 +15,10 @@ def suite():
     suite = unittest.TestSuite()
 
     suite.addTests((
+        # iris
         unittest.makeSuite(test_shirobara.StoryTest),
+        # hj
+        unittest.makeSuite(test_anotherend.StoryTest),
         ))
 
     return suite
