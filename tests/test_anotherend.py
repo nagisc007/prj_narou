@@ -27,10 +27,22 @@ class StoryTest(unittest.TestCase):
         self.assertTrue(utl.followed_all_flags_with_error_info(self, self.story))
 
     def test_has_basic_infos(self):
-        pass
+        utl.exists_basic_infos_by_data(self,
+                [
+                    ("story", self.story, self.w.akura, self.w.minae),
+                ])
 
     def test_has_outline_infos(self):
-        pass
+        w = self.w
+        utl.exists_outline_infos_by_data(self,
+                [
+                    ("story", self.story,
+                        w.akura.remember("大事なこと"),
+                        w.akura.be("忘れてしまった"),
+                        w.akura.do("何度も死ぬ"),
+                        w.akura.deal("伝える", w.minae, "自分の本音"),
+                        True),
+                ])
 
     def test_has_themes(self):
         for k, v in THEMES.items():

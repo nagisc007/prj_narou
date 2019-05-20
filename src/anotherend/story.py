@@ -28,6 +28,15 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("あから始まり異世界終了"),
+            w.akura.be("die"),
+            w.akura.think(w.i.anotherworld),
+            w.akura.look("wake"),
+            w.akura.be(w.stage.world1, w.day.first),
+            w.akura.be("忘れてしまった"),
+            w.akura.remember("大事なこと"),
+            w.akura.do("何度も死ぬ"),
+            w.akura.meet(w.minae),
+            w.akura.deal("伝える", w.minae, "自分の本音"),
             )
 
 
