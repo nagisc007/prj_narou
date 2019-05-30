@@ -16,6 +16,7 @@ CHARAS = (
         ("zer", "ゼル", 99, "female", "妖精", "me:アタシ"),
         ("master", "マスター", 99, "male", "世界管理者", "me:ワタシ"),
         # sub
+        ("ringi", "星,リンギ", 45, "male", "商人", "me:オレ"),
         # mob
         )
 
@@ -37,6 +38,8 @@ STAGES = (
         ("apart", "アパート"),
         # Part
         ("field1", "大地"),
+        ## chapter 1
+        ("market1", "市場その１"),
         )
 
 
