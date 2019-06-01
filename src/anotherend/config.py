@@ -18,6 +18,9 @@ CHARAS = (
         # sub
         ("ringi", "星,リンギ", 45, "male", "商人", "me:オレ"),
         # mob
+        # chapter 2
+        ## sub
+        ("reception2", "受付嬢", 30, "female", "受付嬢"),
         )
 
 
@@ -38,8 +41,14 @@ STAGES = (
         ("apart", "アパート"),
         # Part
         ("field1", "大地"),
+        ("blackzone", "暗黒の場所"),
         ## chapter 1
         ("market1", "市場その１"),
+        ## chapte 2
+        ("town2", "アクセク"),
+        ("guild2", "ギルド"),
+        ("stable", "馬小屋"),
+        ("field2", "フィールド２")
         )
 
 
@@ -55,6 +64,8 @@ ITEMS = (
 
 INFOS = (
         ("anotherworld", "異世界"),
+        ("killer", "謎の殺人者"),
+        ("transfer", "転生体"),
         )
 
 

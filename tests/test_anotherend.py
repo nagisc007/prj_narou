@@ -57,7 +57,7 @@ class StoryTest(unittest.TestCase):
                     # chapter 01
                     ("chapter 01", self.ch1, self.w.akura, self.w.minae),
                     # chapter 02
-                    ("chapter 02", self.ch2, self.w.akura, self.w.akura),
+                    ("chapter 02", self.ch2, self.w.akura, self.w.zer),
                     # chapter 03
                     ("chapter 03", self.ch3, self.w.akura, self.w.akura),
                     # chapter 04
@@ -102,10 +102,10 @@ class StoryTest(unittest.TestCase):
                         True),
                     # chapter 02
                     ("chapter 02", self.ch2,
-                        w.akura.be(),
-                        w.akura.be(),
-                        w.akura.be(),
-                        w.akura.be(),
+                        w.akura.know("自分の状況"),
+                        w.akura.meet(w.zer),
+                        w.akura.go(w.stage.field2),
+                        w.akura.deal("殺された"),
                         True),
                     # chapter 03
                     ("chapter 03", self.ch3,
