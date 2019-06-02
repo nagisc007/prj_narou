@@ -20,9 +20,11 @@ CHARAS = (
         # sub
         ("ringi", "星,リンギ", 45, "male", "商人", "me:オレ"),
         # mob
-        # chapter 2
-        ## sub
-        ("reception2", "受付嬢", 30, "female", "受付嬢"),
+        ## chapter 2
+        ### sub
+        ("reception2", "受付嬢", 30, "female", "受付嬢", "me:アタシ"),
+        ### mob
+        ("gatekeeper2", "門番", 28, "male", "門番", "me:私"),
         )
 
 
@@ -49,7 +51,11 @@ STAGES = (
         ## chapte 2
         ("town2", "アクセク"),
         ("guild2", "ギルド"),
-        ("stable", "馬小屋"),
+        ("bar2", "居酒屋"),
+        ("weaponshop2", "武器屋"),
+        ("eating2", "大衆食堂"),
+        ("stable2", "馬小屋"),
+        ("gate2", "外門"),
         ("field2", "フィールド２"),
         ## chapter 3
         ("floor3", "メインフロア"),
@@ -72,6 +78,14 @@ INFOS = (
         ("anotherworld", "異世界"),
         ("killer", "謎の殺人者"),
         ("transfer", "転生体"),
+        ## chapter 0
+        ("feeling", "感覚"),
+        ## chapter 1
+        ("checkstatus", "状況確認"), # NOTE: theme1
+        ## chapter 2
+        ("hungry", "空腹"), # NOTE: theme2
+        ## chapter 3
+        ## chapter 4
         )
 
 
@@ -79,6 +93,7 @@ FLAGS = (
         )
 
 THEMES = {
+        "transfer": "転生",
         }
 
 MOTIFS = {
