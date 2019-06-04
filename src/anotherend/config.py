@@ -10,10 +10,10 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("akura", "悪鞍,汚悪", 25, "male", "無職",
-            "me:俺"),
+            "me:俺:zer:ゼル"),
         ("minae", "水無本,美綯", 25, "female", "謎の女性",
             "me:わたし"),
-        ("zer", "ゼル", 99, "female", "妖精", "me:アタシ"),
+        ("zer", "ゼル", 99, "female", "妖精", "me:アタシ:akura:アックン"),
         ("master", "マスター", 99, "male", "世界管理者", "me:ワタシ"),
         ("killer", "暗殺者", 99, "male", "暗殺者", "me:ワタシ",
             "実は世界管理者"),
@@ -57,6 +57,7 @@ STAGES = (
         ("stable2", "馬小屋"),
         ("gate2", "外門"),
         ("field2", "フィールド２"),
+        ("street2", "路地"),
         ## chapter 3
         ("floor3", "メインフロア"),
         ("town3", "サード・タウン"),
@@ -78,12 +79,15 @@ INFOS = (
         ("anotherworld", "異世界"),
         ("killer", "謎の殺人者"),
         ("transfer", "転生体"),
+        ("transnovel", "異世界転生物"),
         ## chapter 0
         ("feeling", "感覚"),
         ## chapter 1
         ("checkstatus", "状況確認"), # NOTE: theme1
+        ("apple1", "林檎に似た果実"),
         ## chapter 2
         ("hungry", "空腹"), # NOTE: theme2
+        ("minae_exist2", "彼女の存在")
         ## chapter 3
         ## chapter 4
         )
