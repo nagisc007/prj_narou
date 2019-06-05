@@ -9,9 +9,9 @@ sys.path.append('storybuilder')
 
 CHARAS = (
         # main
-        ("akura", "悪鞍,汚悪", 25, "male", "無職",
+        ("akura", "悪鞍,汚悪", 17, "male", "無職",
             "me:俺:zer:ゼル"),
-        ("minae", "水無本,美綯", 25, "female", "謎の女性",
+        ("minae", "水無本,美綯", 17, "female", "謎の女性",
             "me:わたし"),
         ("zer", "ゼル", 99, "female", "妖精", "me:アタシ:akura:アックン"),
         ("master", "マスター", 99, "male", "世界管理者", "me:ワタシ"),
@@ -25,6 +25,9 @@ CHARAS = (
         ("reception2", "受付嬢", 30, "female", "受付嬢", "me:アタシ"),
         ### mob
         ("gatekeeper2", "門番", 28, "male", "門番", "me:私"),
+        ## chapter 3
+        ("matsuda", "松田,健作", 17, "male", "英雄", "me:オレ様"),
+        ("akane", "如月,朱音", 17, "female", "魔道士", "me:ウチ"),
         )
 
 
@@ -62,6 +65,10 @@ STAGES = (
         ("floor3", "メインフロア"),
         ("town3", "サード・タウン"),
         ("castle3", "サードクラッド"),
+        ("tower3", "塔"),
+        ("shop3", "武器屋"),
+        ("room3", "個室"),
+        ("toproom3", "最上階"),
         )
 
 
@@ -72,6 +79,9 @@ DAYS = (
 
 
 ITEMS = (
+        ## chapter 1
+        ("apple1", "林檎に似た果実"),
+        ## chapter 2
         )
 
 
@@ -84,11 +94,12 @@ INFOS = (
         ("feeling", "感覚"),
         ## chapter 1
         ("checkstatus", "状況確認"), # NOTE: theme1
-        ("apple1", "林檎に似た果実"),
         ## chapter 2
         ("hungry", "空腹"), # NOTE: theme2
-        ("minae_exist2", "彼女の存在")
+        ("minae_exist2", "彼女の存在"),
         ## chapter 3
+        ("coordinate", "協調"), # NOTE: theme3
+        ("zeroforce", "死神討伐団"),
         ## chapter 4
         )
 
