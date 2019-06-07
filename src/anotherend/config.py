@@ -26,8 +26,8 @@ CHARAS = (
         ### mob
         ("gatekeeper2", "門番", 28, "male", "門番", "me:私"),
         ## chapter 3
-        ("matsuda", "松田,健作", 17, "male", "英雄", "me:オレ様"),
-        ("akane", "如月,朱音", 17, "female", "魔道士", "me:ウチ"),
+        ("matsuda", "松田,健作", 17, "male", "英雄", "me:オレ様:akane:朱音"),
+        ("akane", "如月,朱音", 17, "female", "魔道士", "me:ウチ:matsu:健ちゃん"),
         )
 
 
@@ -79,6 +79,8 @@ DAYS = (
 
 
 ITEMS = (
+        ## main
+        ("blackcloak", "黒マント"),
         ## chapter 1
         ("apple1", "林檎に似た果実"),
         ## chapter 2
@@ -90,6 +92,11 @@ INFOS = (
         ("killer", "謎の殺人者"),
         ("transfer", "転生体"),
         ("transnovel", "異世界転生物"),
+        ("fairy", "次元の妖精"),
+        ## chara
+        ("minae_hight", "140cm"),
+        ("minae_hair", "黒髪ロング"),
+        ("minae_point", "左目のホクロ"),
         ## chapter 0
         ("feeling", "感覚"),
         ## chapter 1
@@ -97,9 +104,15 @@ INFOS = (
         ## chapter 2
         ("hungry", "空腹"), # NOTE: theme2
         ("minae_exist2", "彼女の存在"),
+        ("needtosay_word", "彼女に伝えるべき言葉"),
         ## chapter 3
         ("coordinate", "協調"), # NOTE: theme3
         ("zeroforce", "死神討伐団"),
+        ("another_transfer", "他の転生者"),
+        ("another_fairy", "他の次元妖精"),
+        ("killname", "デス・ミリオン"),
+        ("master", "管理者"),
+        ("barrier3", "呪詛障壁"),
         ## chapter 4
         )
 
