@@ -4,6 +4,7 @@
 import unittest
 import test_shirobara
 import test_anotherend
+import test_sagepants
 
 
 def suite():
@@ -19,6 +20,8 @@ def suite():
         unittest.makeSuite(test_shirobara.StoryTest),
         # hj
         unittest.makeSuite(test_anotherend.StoryTest),
+        # esn
+        unittest.makeSuite(test_sagepants.StoryTest),
         ))
 
     return suite

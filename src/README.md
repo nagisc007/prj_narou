@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#esn1](sagepants/README.md) | 大賢者さまのパンツ！ | [第1回アース・スターノベル文庫大賞](https://www.es-novel.jp/esn-award01/) |
 | [#hj1](anotherend/README.md) | あから始まる異世界終了 | [HJネット小説大賞2019](http://hobbyjapan.co.jp/hjbunko/novelawards/netaward03.html) |
 | [#iris4](shirobara/README.md) | 白薔薇剣士に恋は斬れない | [第４回アイリスNEOファンタジー大賞](http://www.ichijinsha.co.jp/special/iris/neof_award4/) |
 
