@@ -3,7 +3,7 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.sagepants.story import world, story
+from src.sagepants.story import world, story, story_baseinfo, story_outlineinfo
 from src.sagepants.config import THEMES, MOTIFS
 
 
@@ -28,20 +28,16 @@ class StoryTest(unittest.TestCase):
 
     def test_has_basic_infos(self):
         utl.exists_basic_infos_by_data(self,
-                [])
+                story_baseinfo(self.w))
 
     def test_has_outline_infos(self):
         w = self.w
         utl.exists_outline_infos_by_data(self,
-                [])
+                story_outlineinfo(self.w))
 
     def test_has_themes(self):
-        for k, v in THEMES.items():
-            with self.subTest(k=k, v=v):
-                self.assertTrue(utl.has_the_keyword_in(self.story, THEMES[k]))
+        utl.followed_themes(self, self.story, THEMES)
 
     def test_has_motifs(self):
-        for k, v in MOTIFS.items():
-            with self.subTest(k=k, v=v):
-                self.assertTrue(utl.has_the_keyword_in_description_in(self.story, MOTIFS[k]))
+        utl.followed_motifs(self, self.story, MOTIFS)
 

@@ -9,6 +9,21 @@ sys.path.append('storybuilder')
 from storybuilder.builder import world as wd
 from src.sagepants import config as cnf
 
+# outline
+def story_baseinfo(w: wd.World):
+    return [
+            ("story", story(w), w.hero, w.ery),
+            ]
+
+def story_outlineinfo(w: wd.World):
+    return [
+            ("story", story(w),
+                w.hero.think(w.i.pants_life),
+                w.hero.be(w.pants),
+                w.hero.deal(w.i.coope, w.ery),
+                w.hero.know(w.i.myvalue),
+                True),
+            ]
 
 # main
 def world():
@@ -20,6 +35,13 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("大賢者さまのパンツ！"),
+            w.hero.go(w.stage.lemurian, w.day.firstmeet),
+            w.hero.meet(w.ery),
+            w.hero.deal(w.i.transfer, w.pants),
+            w.hero.be(w.pants),
+            w.hero.think(w.i.pants_life),
+            w.hero.deal(w.i.coope, w.ery),
+            w.hero.know(w.i.myvalue),
             )
 
 
