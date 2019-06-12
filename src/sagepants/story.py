@@ -8,12 +8,14 @@ sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
 from src.sagepants import config as cnf
+from src.sagepants import chapter01 as ch1
+
 
 # outline
 def story_baseinfo(w: wd.World):
     return [
             ("story", story(w), w.hero, w.ery),
-            ]
+            ] + ch1.baseinfo(w)
 
 def story_outlineinfo(w: wd.World):
     return [
@@ -23,7 +25,7 @@ def story_outlineinfo(w: wd.World):
                 w.hero.deal(w.i.coope, w.ery),
                 w.hero.know(w.i.myvalue),
                 True),
-            ]
+            ] + ch1.outline(w)
 
 # main
 def world():
