@@ -10,11 +10,12 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("hero", "パンツ,太郎", 30, "male", "パンツ", "me:オレ"),
-        ("ery", "エリザベート,ステラ", 99, "female", "賢者", "me:私"),
+        ("ery", "エリザベート,ステラ", 99, "female", "賢者", "me:我:my:私"),
         # sub
         ("robber", "パンツ,泥棒", 59, "male", "パンツ", "me:ワシ"),
         # chapter 1
         ("gater1", "番人１", 28, "male", "番兵"),
+        ("sufferer1", "痴漢被害者", 27, "female", "会社員"),
         )
 
 STAGES = (
@@ -25,20 +26,23 @@ STAGES = (
         ("station", "駅"),
         # Part
         ("train", "列車内"),
+        ("sta_home", "駅のホーム"),
         )
 
 
 DAYS = (
         # main
-        ("deadman", "死んだ日"),
+        ("deadman", "死んだ日", 6,6, 2019),
         ("firstmeet", "最初の遭遇日"),
         # sub
+        ("departher", "彼女と別れた日", 6,6, 2016),
         )
 
 
 ITEMS = (
         # main
         ("pants", "パンツ"),
+        ("sagerobe", "聖紫法衣"),
         # sub
         )
 
@@ -53,6 +57,9 @@ INFOS = (
         ("coope", "協力"),
         # chapter 1
         ("myfuture", "自分の未来"),
+        # her phrase
+        ("herword001", "パンツは知らない他人に触らせる為のものじゃないのよ"),
+        ("herword002", "パンツというのは人類が最初に身に着けた服そのものであって決して下着なんて呼んでいい代物じゃないの"),
         )
 
 
