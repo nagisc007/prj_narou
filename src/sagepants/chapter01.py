@@ -542,6 +542,7 @@ def ep_herodead(w: wd.World):
 
 def ep_wonderworld(w: wd.World):
     return (w.chaptertitle("不可思議な世界で"),
+            # NOTE: エリィはパンツを履かないとここから出られない（力があると弾かれる）
             sc_iampants(w),
             sc_prisoner(w),
             )
