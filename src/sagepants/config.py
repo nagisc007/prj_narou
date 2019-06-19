@@ -10,11 +10,13 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("hero", "パンツ,太郎", 30, "male", "パンツ", "me:オレ"),
-        ("ery", "エリザベート,ステラ", 99, "female", "賢者", "me:我:my:私:I:わたし"),
-        ("lily", "リリィ", 20, "female", "魔道士", "me:わたし"),
+        ("ery", "ステラ,エリザベート", 99, "female", "賢者", "me:我:my:私:I:わたし"),
+        ("lily", "ステラ,リリィ", 20, "female", "魔道士", "me:わたし"),
         # sub
-        ("robber", "パンツ,泥棒", 59, "male", "パンツ", "me:ワシ"),
-        ("steady", "元彼女", 30, "female", "役場職員", "me:私"),
+        ("robber", "パンティ,三郎", 42, "male", "パンツ", "me:ワシ"),
+        ("rei", "ワムザ,レイ", 30, "female", "大賢者", "me:私"),
+        ("pery", "ルナ,ペリィ", 27, "female", "公安特別部隊長", "me:ワタシ"),
+        ("steady", "沢森,麗子", 30, "female", "役場職員", "me:私"),
         # chapter 1
         ("sufferer1", "痴漢被害者", 27, "female", "会社員"),
         # chapter 2
