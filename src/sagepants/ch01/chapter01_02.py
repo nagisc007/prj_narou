@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Chapter 03: The pants.
+"""Chapter 01-02: The pants.
 """
 import os
 import sys
@@ -9,6 +9,7 @@ sys.path.append('storybuilder')
 from storybuilder.builder import world as wd
 from src.sagepants import config as cnf
 
+
 # scenes
 
 # episodes
@@ -16,27 +17,22 @@ from src.sagepants import config as cnf
 # outline
 def baseinfo(w: wd.World):
     return [
-            ("chapter 3", story(w), w.hero, w.ery),
+            ("chapter 1-02", story(w), w.hero, w.ery),
             ]
 
 def outline(w: wd.World):
     return [
-            ("chapter 3", story(w),
-                w.hero.go(w.stage.herhome),
-                w.hero.know(w.i.ery_home),
-                w.hero.move(w.stage.forest1),
-                w.hero.meet(w.lily),
+            ("chapter 1-02", story(w),
+                w.hero.be(),
+                w.hero.be(),
+                w.hero.be(),
+                w.hero.be(),
                 True),
             ]
 
 # main
 def story(w: wd.World):
-    return (w.maintitle("三枚目：パンツ、戦うもん！"),
-            w.hero.be(w.stage.forest1, w.day.firstmeet, w.ery),
-            w.hero.go(w.stage.herhome),
-            w.hero.know(w.i.ery_home),
-            w.hero.move(w.stage.forest1),
-            w.hero.meet(w.lily),
+    return (w.maintitle("ニ枚目：パンツの名は"),
             )
 
 def main(): # pragma: no cover

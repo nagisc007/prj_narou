@@ -17,7 +17,7 @@ CHARAS = (
         ("rei", "ワムザ,レイ", 30, "female", "大賢者", "me:私"),
         ("pery", "ルナ,ペリィ", 27, "female", "公安特別部隊長", "me:ワタシ"),
         ("steady", "沢森,麗子", 30, "female", "役場職員", "me:私"),
-        # chapter 1
+        # chapter 1-1
         ("sufferer1", "痴漢被害者", 27, "female", "会社員"),
         # chapter 2
         ("gater1", "番人1", 28, "female", "番兵"),
@@ -59,9 +59,16 @@ INFOS = (
         ("pants_life", "パンツの人生"),
         ("myvalue", "己の価値"),
         ("anotherworld", "異世界"),
+        ("equip", "装着"),
         # sub
         ("coope", "協力"),
         # chapter 1
+        ("pervert", "痴漢"),
+        ("rescue_her", "被害女性を助ける"),
+        ("catch_pervert", "痴漢逮捕"),
+        ("dead_truck", "トラック事故死"),
+        ("mystatus", "己の状況"),
+        ("knowledge_world", "この世界についての知識"),
         ("myfuture", "自分の未来"),
         # chapter 2
         ("ery_home", "エリィの家の場所"),
