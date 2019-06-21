@@ -9,8 +9,8 @@ sys.path.append('storybuilder')
 
 CHARAS = (
         # main
-        ("hero", "パンツ,太郎", 30, "male", "パンツ", "me:オレ"),
-        ("ery", "ステラ,エリザベート", 99, "female", "賢者", "me:我:my:私:I:わたし"),
+        ("hero", "パンツ,太郎", 30, "male", "パンツ", "me:オレ:I:太郎:ery:エリィ"),
+        ("ery", "ステラ,エリザベート", 99, "female", "賢者", "me:我:my:私:I:わし:hero:タロウ:ery:エリィ"),
         ("lily", "ステラ,リリィ", 20, "female", "魔道士", "me:わたし"),
         # sub
         ("robber", "パンティ,三郎", 42, "male", "パンツ", "me:ワシ"),
@@ -65,6 +65,7 @@ INFOS = (
         ("myfuture", "自分の未来"),
         # chapter 2
         ("ery_home", "エリィの家の場所"),
+        ("language1", "レム語"),
         # her phrase
         ("herword001", "パンツは知らない他人に触らせる為のものじゃないのよ"),
         ("herword002", "パンツというのは人類が最初に身に着けた服そのものであって決して下着なんて呼んでいい代物じゃないの"),
