@@ -9,6 +9,7 @@ sys.path.append('storybuilder')
 from storybuilder.builder import world as wd
 from src.sagepants import config as cnf
 from src.sagepants.ch01 import chapter01_01 as chap01
+from src.sagepants.ch01 import chapter01_02 as chap02
 
 
 # scenes
@@ -343,7 +344,8 @@ def sc_herpower(w: wd.World):
 # outline
 def baseinfo(w: wd.World):
     return [("chapter 1", story(w), w.hero, w.ery),] \
-            + chap01.baseinfo(w)
+            + chap01.baseinfo(w) \
+            + chap02.baseinfo(w)
 
 def outline(w: wd.World):
     return [
@@ -354,7 +356,9 @@ def outline(w: wd.World):
                 w.hero.deal(w.ery, w.i.equip),
                 True),
             ] \
-                + chap01.outline(w)
+                + chap01.outline(w) \
+                + chap02.outline(w)
+
 # NOTE
 # c01 出会い（パンツ転生）
 # c02 パンツ自認、命名
