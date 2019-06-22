@@ -39,7 +39,7 @@ STAGES = (
 
 DAYS = (
         # main
-        ("deadman", "死んだ日", 6,6, 2019),
+        ("deadman", "死んだ日", 8,2, 2019),# パンツの日
         ("firstmeet", "最初の遭遇日"),
         ("current", "現在"),
         # sub
