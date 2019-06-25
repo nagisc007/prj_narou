@@ -393,7 +393,7 @@ def outline(w: wd.World):
 
 # main
 def story(w: wd.World):
-    return (w.maintitle("ニ枚目：パンツの名は"),
+    return (w.maintitle("ニ枚目：美女とパンツ"),
             ep_intro(w),
             ep_main(w),
             )

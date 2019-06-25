@@ -60,6 +60,8 @@ INFOS = (
         ("myvalue", "己の価値"),
         ("anotherworld", "異世界"),
         ("equip", "装着"),
+        ("energy", "エナ"),
+        ("metal", "魔鋼"),
         # sub
         ("coope", "協力"),
         # chapter 1
@@ -70,6 +72,12 @@ INFOS = (
         ("mystatus", "己の状況"),
         ("knowledge_world", "この世界についての知識"),
         ("myfuture", "自分の未来"),
+        # chapter 1-3
+        ("destroy_sage", "世界を滅ぼす大賢者"),
+        ("her_status", "彼女の状況"),
+        ("this_world", "この世界のこと"),
+        ("mean_taro", "勤勉な者"),
+        ("realname", "真名"),
         # chapter 2
         ("ery_home", "エリィの家の場所"),
         ("language1", "レム語"),
