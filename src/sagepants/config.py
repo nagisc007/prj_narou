@@ -28,6 +28,7 @@ STAGES = (
         # Area
         ("lemurian", "エル・レム・リア"),
         # Place
+        ("island_prison", "監獄島"),
         ("prison", "監獄"),
         ("station", "駅"),
         ("forest1", "大森林"),
@@ -35,6 +36,8 @@ STAGES = (
         # Part
         ("train", "列車内"),
         ("sta_home", "駅のホーム"),
+        ## ch01-04
+        ("out_prison", "監獄の外"),
         )
 
 DAYS = (
@@ -69,7 +72,6 @@ INFOS = (
         ("rescue_her", "被害女性を助ける"),
         ("catch_pervert", "痴漢逮捕"),
         ("dead_truck", "トラック事故死"),
-        ("mystatus", "己の状況"),
         ("knowledge_world", "この世界についての知識"),
         ("myfuture", "自分の未来"),
         # chapter 1-3
@@ -78,6 +80,8 @@ INFOS = (
         ("this_world", "この世界のこと"),
         ("mean_taro", "勤勉な者"),
         ("realname", "真名"),
+        # chapter 1-4
+        ("mystatus", "己の状況"),
         # chapter 2
         ("ery_home", "エリィの家の場所"),
         ("language1", "レム語"),
@@ -86,6 +90,7 @@ INFOS = (
         ("herword002", "パンツというのは人類が最初に身に着けた服そのものであって決して下着なんて呼んでいい代物じゃないの"),
         ("herword003", "下着は隠されたもう一つの顔みたいなものなのよ"),
         ("herword004", "あなたが私の為にできることなんか本質的には何もないのよ"),
+        ("herword005", "一番最悪な人種は人が楽しんでいるところにわざわざ水を差すような発言をする輩よ"),
         )
 
 FLAGS = (

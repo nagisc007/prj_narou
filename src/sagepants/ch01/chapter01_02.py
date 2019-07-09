@@ -251,6 +251,7 @@ def sc_whatpants(w: wd.World):
             hero.think().d("そう認識した瞬間",
                     "自分の内側に女性のアレやソレやコレが密着しているのだということに気づいて",
                     "$meは思考に急ブレーキを掛けようとした"),
+            hero.deal(ery, w.i.equip),
             ery.deal("身に着ける", hero),
             ery.deal(hero, "装着"),
             hero.feel("衝撃"),

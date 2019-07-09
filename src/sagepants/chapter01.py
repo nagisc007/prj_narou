@@ -11,6 +11,7 @@ from src.sagepants import config as cnf
 from src.sagepants.ch01 import chapter01_01 as chap01
 from src.sagepants.ch01 import chapter01_02 as chap02
 from src.sagepants.ch01 import chapter01_03 as chap03
+from src.sagepants.ch01 import chapter01_04 as chap04
 
 
 # outline
@@ -18,7 +19,8 @@ def baseinfo(w: wd.World):
     return [("chapter 1", story(w), w.hero, w.ery),] \
             + chap01.baseinfo(w) \
             + chap02.baseinfo(w) \
-            + chap03.baseinfo(w)
+            + chap03.baseinfo(w) \
+            + chap04.baseinfo(w)
 
 def outline(w: wd.World):
     return [
@@ -31,7 +33,8 @@ def outline(w: wd.World):
             ] \
                 + chap01.outline(w) \
                 + chap02.outline(w) \
-                + chap03.outline(w)
+                + chap03.outline(w) \
+                + chap04.outline(w)
 
 # NOTE
 # c01 出会い（パンツ転生）
@@ -51,10 +54,7 @@ def story(w: wd.World):
             chap01.story(w),
             chap02.story(w),
             chap03.story(w),
-            w.hero.know(w.i.mystatus, "$want"),
-            w.hero.be(w.i.transfer, w.pants),
-            w.hero.deal(w.ery, w.i.knowledge_world),
-            w.hero.deal(w.ery, w.i.equip),
+            chap04.story(w),
             )
 
 

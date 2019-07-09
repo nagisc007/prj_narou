@@ -15,6 +15,8 @@ def sc_little_ery(w: wd.World):
     hero, ery = w.hero, w.ery
     return w.scene("小さくなったエリィ",
             hero.be(w.stage.prison, w.day.firstmeet),
+            hero.know(w.i.mystatus, "$want"),
+            hero.be(w.i.transfer, w.pants),
             hero.look(ery, "小さい").d("彼女が作り出した鏡のような水面には",
                 "パンツとなった$meを履いたままその両端を小さな手でぎゅっと握りしめて立っている",
                 "胸元までの長さの紫色の髪を垂らした幼女が映っていた"),
@@ -196,6 +198,7 @@ def sc_prisoner(w: wd.World):
 def sc_thesage(w: wd.World):
     hero, ery = w.hero, w.ery
     return w.scene("世界を滅ぼす大賢者",
+            hero.deal(ery, w.i.knowledge_world),
             hero.look().d("彼女の手から発射された小さな光の弾は幅広な鉄格子の間をすり抜けるかと思われたが",
                 "その隙間に入りかけたところで何かに弾かれたかのように角度を変え",
                 "そのまま地面に落ちて爆発した"),
